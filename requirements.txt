@@ -1,0 +1,8 @@
+bcrypt
+body-parser
+dotenv
+express
+jsonwebtoken
+mongoose
+nodemon
+
