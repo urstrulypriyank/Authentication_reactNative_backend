@@ -1,0 +1,85 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "login-forms",
+    "dateExported": "2023-03-04T13:37:30.085Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "1a6e2b42-cda2-447d-bf20-3e8e9c7b5b8a",
+            "colId": "c97d0517-0525-41cc-8f8d-f135298e7afc",
+            "containerId": "",
+            "name": "http://localhost:3000/signUp",
+            "url": "http://localhost:3000",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-03-04T13:35:44.461Z",
+            "modified": "2023-03-04T13:35:44.461Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2ZkOGI5NjY1YzkwMzZiMjdiOTA3OGYiLCJpYXQiOjE2Nzc1NjA3MjZ9.hW0EWl7ZEPlfwqZELoSXIwX8XWPp3l_ASuvoDk4ENRA"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Priyank rai\",\n  \"email\": \"somea@gmail.com\",\n  \"password\": \"some password\",\n  \"dob\": \"Dobok dob\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "d6441206-2bd3-4184-8c80-c490b18733dc",
+            "colId": "c97d0517-0525-41cc-8f8d-f135298e7afc",
+            "containerId": "",
+            "name": "http://localhost:3000/signUp",
+            "url": "http://localhost:3000/signUp",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-03-04T13:36:29.784Z",
+            "modified": "2023-03-04T13:36:29.784Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Priyank rai\",\n  \"email\": \"s32omea@gmail.com\",\n  \"password\": \"some password\",\n  \"dob\": \"Dobok dob\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "9199e9e9-ecc9-48d7-a309-64b930fab327",
+            "colId": "c97d0517-0525-41cc-8f8d-f135298e7afc",
+            "containerId": "",
+            "name": "http://localhost:3000/signUp Copy",
+            "url": "http://localhost:3000/SignUp",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-03-04T13:36:44.877Z",
+            "modified": "2023-03-04T13:36:44.878Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"name\",\n  \"email\": \"mail@mail.com\",\n  \"password\": \"password\",\n  \"dob\": \"dob\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}

@@ -1,23 +1,24 @@
 require("dotenv").config();
 const express = require("express");
-const port = process.env.PORT;
-
-const app = express();
 const bodyParser = require("body-parser");
-
+const port = process.env.PORT;
 // using database
 require("./db");
 require("./models/user");
 
-// using middleware bodyParser to get data as in json format
+// database required in authRoutes
+const authRoutes = require("./routes/authRoutes");
+const requireToken = require("./middleware/AuthToken");
 
+const app = express();
+
+// using middleware bodyParser to get data as in json format
 app.use(bodyParser.json());
 
 // Routes
-const authRoutes = require("./routes/authRoutes");
 app.use(authRoutes);
 
-app.get("/", (req, res) => {
+app.get("/", requireToken,(req, res) => {
   res.send("Hello World");
 });
 
