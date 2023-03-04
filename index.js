@@ -18,7 +18,8 @@ app.use(bodyParser.json());
 // Routes
 app.use(authRoutes);
 
-app.get("/", requireToken,(req, res) => {
+app.get("/", requireToken, (req, res) => {
+  console.log(req.user);
   res.send("Hello World");
 });
 
