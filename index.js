@@ -1,6 +1,7 @@
 require("dotenv").config();
 const express = require("express");
 const bodyParser = require("body-parser");
+
 const port = process.env.PORT;
 // using database
 require("./db");
@@ -20,6 +21,7 @@ app.use(authRoutes);
 
 app.get("/", requireToken, (req, res) => {
   console.log(req.user);
+  ;
   res.send("Hello World");
 });
 
